@@ -1,0 +1,7 @@
+Use a string to store the second line of each test case. 
+Then, use a for loop to store the non-whitespace characters into an array (since the integers in the second line are all single digits). 
+Afterward, use another for loop to determine the weight changes of the rabbit. 
+A more advanced method can use StringStream to solve the problem. 
+Note that after using cin to read the six integers, you need to do a meaningless get line once; otherwise, the getline will fail. 
+Alternatively, you can use cin.ignore(). 
+To avoid TLE (Time Limit Exceeded), when determining the weight changes, if it is already found that the rabbit's weight is less than 0, you can directly break the for loop and use a boolean to determine whether to output the rabbit's current weight.
